@@ -6,6 +6,7 @@ html
         link(rel="stylesheet", href="/css/style.css")
     body
         h1 Custom Object Table
+        a(href="/update-cobj" class="pb-4") Add to this table
         table
             tr
                 th Name
@@ -16,4 +17,3 @@ html
                         td #{cocktail.properties.name}
                         td #{cocktail.properties.mixing_technique}
                         td #{cocktail.properties.taste}
-        a(href="/update-cobj") Add to this table
