@@ -1,0 +1,19 @@
+doctype html
+html
+    head
+        title= `${title}`
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        h1 Custom Object Table
+        table
+            tr
+                th Name
+                th Mixing technique
+                th Taste
+                each cocktail in data
+                    tr
+                        td #{cocktail.properties.name}
+                        td #{cocktail.properties.mixing_technique}
+                        td #{cocktail.properties.taste}
+        a(href="/update-cobj") Add to this table

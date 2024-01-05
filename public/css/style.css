@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-body, * {
+* {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+}
+
+body {
+    width: 90%;
+    margin-inline: auto;
 }
 
 h1 {
@@ -20,7 +25,7 @@ h1 {
 .card {
     flex-basis: 31%;
     margin: 1rem 0.4rem;
-    padding: 1rem 0.4rem 2.5rem 0.4rem;
+    padding: 2rem;
     border: solid 1px lightgrey;
     border-radius: 15px;
     box-shadow: 3px 2px 6px lightgrey;
@@ -54,5 +59,17 @@ input[type="submit"] {
     background-color: lightgrey;
     border: none;
     padding: .375rem 1rem;
-    margin-top: 10px;
+    margin-top: 32px;
+}
+
+tr:has(th) {
+    background-color: lightblue;
+}
+
+td, th {
+    padding: .5rem 1rem;
+}
+
+td {
+    border-bottom: 1px solid lightblue;
 }
